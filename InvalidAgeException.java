@@ -13,13 +13,13 @@ class InvalidAgeException {
     Scanner scanner = new Scanner(System.in);
     System.out.print("Enter your age: ");
     int age = scanner.nextInt();
+    scanner.close();
     try {
       if (age < 5) {
         throw new AgeMismatchException();
-      }
-    else{
+      } else {
         System.out.println("Welcome to air");
-    }
+      }
     } catch (AgeMismatchException e) {
       System.out.println(e);
     }
