@@ -9,7 +9,7 @@ class Programmer extends Employee {
 }
 
 class TeamLead extends Employee {
-        int basic_pay =150000;
+        int basic_pay = 150000;
 }
 
 class AssistantProjectManager extends Employee {
